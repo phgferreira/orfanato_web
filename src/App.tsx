@@ -1,26 +1,10 @@
 import React from 'react';
-
-// JSX - Javascript XML
-
-interface TitleProps {
-  text: string;
-}
-
-function Title(props: TitleProps) {
-return (
-  <h1>{props.text}</h1>
-  )
-}
+import './css/default.css';
+import Routes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <Title text="Título 1" />
-      <Title text="Título 2" />
-      <Title text="Título 3" />
-      <Title text="Título 4" />
-      <Title text="Título 5" />
-    </div>
+    <Routes />
   );
 }
 
